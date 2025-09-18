@@ -347,13 +347,13 @@ pfUI:RegisterModule("nameplates", "vanilla:tbc", function ()
 
   -- combat tracker
   nameplates.combat = CreateFrame("Frame")
-  nameplates.combat:RegisterEvent("PLAYER_ENTER_COMBAT")
-  nameplates.combat:RegisterEvent("PLAYER_LEAVE_COMBAT")
+  nameplates.combat:RegisterEvent("PLAYER_REGEN_DISABLED")
+  nameplates.combat:RegisterEvent("PLAYER_REGEN_ENABLED")
   nameplates.combat:SetScript("OnEvent", function()
-    if event == "PLAYER_ENTER_COMBAT" then
+    if event == "PLAYER_REGEN_DISABLED" then
       this.inCombat = 1
       if PlayerFrame then PlayerFrame.inCombat = 1 end
-    elseif event == "PLAYER_LEAVE_COMBAT" then
+    elseif event == "PLAYER_REGEN_ENABLED" then
       this.inCombat = nil
       if PlayerFrame then PlayerFrame.inCombat = nil end
     end
@@ -1081,7 +1081,7 @@ pfUI:RegisterModule("nameplates", "vanilla:tbc", function ()
 
   -- set nameplate game settings
   nameplates.SetGameVariables = function()
-    local inCombat = nameplates.combat.inCombat == 1  -- Use existing combat state
+    local inCombat = UnitAffectingCombat("player")  -- Use direct combat detection like infight module
     local combatOnly = C.nameplates["display_nameplates_combat_only"] == "1"
     
     -- update visibility (hostile)

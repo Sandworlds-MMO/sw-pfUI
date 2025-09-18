@@ -50,6 +50,7 @@ pfUI_translation["ruRU"] = {
   ["Auto Paging"] = "Автоматическое переключение страниц панелей",
   ["Auto Repair Items"] = "Автоматический ремонт предметов",
   ["Auto Sell Grey Items"] = "Автоматическая продажа серых предметов",
+  ["Auto Show/Hide Nameplates When Entering/Leaving Combat"] = "Автоматически показывать/скрывать таблички имен при входе/выходе из боя",
   ["Average Per Hour"] = "Среднее за час",
   ["Background Color"] = "Цвет фона",
   ["Bags & Bank"] = "Сумки & Банк",

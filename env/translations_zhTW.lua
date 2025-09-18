@@ -50,6 +50,7 @@ pfUI_translation["zhTW"] = {
   ["Auto Paging"] = nil,
   ["Auto Repair Items"] = "自動修理裝備",
   ["Auto Sell Grey Items"] = "自動販賣灰色物品",
+  ["Auto Show/Hide Nameplates When Entering/Leaving Combat"] = "進入/離開戰鬥時自動顯示/隱藏姓名板",
   ["Average Per Hour"] = "平均每小時",
   ["Background Color"] = "背景顏色",
   ["Bags & Bank"] = "背包和銀行",

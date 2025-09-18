@@ -50,6 +50,7 @@ pfUI_translation["frFR"] = {
   ["Auto Paging"] = "Pagination Automatique",
   ["Auto Repair Items"] = "Reparation automatique de l'équipement",
   ["Auto Sell Grey Items"] = "Vente automatique des objets gris",
+  ["Auto Show/Hide Nameplates When Entering/Leaving Combat"] = "Afficher/Masquer automatiquement les barres de vie lors de l'entrée/sortie de combat",
   ["Average Per Hour"] = "Moyenne par heure",
   ["Background Color"] = "Couleur de l'arrière-plan",
   ["Bags & Bank"] = "Sacs et Banque",

@@ -50,6 +50,7 @@ pfUI_translation["zhCN"] = {
   ["Auto Paging"] = "自动分页",
   ["Auto Repair Items"] = "自动修理装备",
   ["Auto Sell Grey Items"] = "自动贩卖灰色物品",
+  ["Auto Show/Hide Nameplates When Entering/Leaving Combat"] = "进入/离开战斗时自动显示/隐藏姓名板",
   ["Average Per Hour"] = "平均每小时",
   ["Background Color"] = "背景颜色",
   ["Bags & Bank"] = "背包和银行",

@@ -357,6 +357,11 @@ pfUI:RegisterModule("nameplates", "vanilla:tbc", function ()
       this.inCombat = nil
       if PlayerFrame then PlayerFrame.inCombat = nil end
     end
+    
+    -- Update nameplate visibility on combat state change
+    if C.nameplates["display_nameplates_combat_only"] == "1" then
+      nameplates:SetGameVariables()
+    end
   end)
 
   nameplates.OnCreate = function(frame)
@@ -1076,8 +1081,11 @@ pfUI:RegisterModule("nameplates", "vanilla:tbc", function ()
 
   -- set nameplate game settings
   nameplates.SetGameVariables = function()
+    local inCombat = nameplates.combat.inCombat == 1  -- Use existing combat state
+    local combatOnly = C.nameplates["display_nameplates_combat_only"] == "1"
+    
     -- update visibility (hostile)
-    if C.nameplates["showhostile"] == "1" then
+    if C.nameplates["showhostile"] == "1" and (not combatOnly or inCombat) then
       _G.NAMEPLATES_ON = true
       ShowNameplates()
     else
@@ -1085,8 +1093,8 @@ pfUI:RegisterModule("nameplates", "vanilla:tbc", function ()
       HideNameplates()
     end
 
-    -- update visibility (hostile)
-    if C.nameplates["showfriendly"] == "1" then
+    -- update visibility (friendly)
+    if C.nameplates["showfriendly"] == "1" and (not combatOnly or inCombat) then
       _G.FRIENDNAMEPLATES_ON = true
       ShowFriendNameplates()
     else

@@ -50,6 +50,7 @@ pfUI_translation["enUS"] = {
   ["Auto Paging"] = nil,
   ["Auto Repair Items"] = nil,
   ["Auto Sell Grey Items"] = nil,
+  ["Auto Show/Hide Nameplates When Entering/Leaving Combat"] = nil,
   ["Average Per Hour"] = nil,
   ["Background Color"] = nil,
   ["Bags & Bank"] = nil,

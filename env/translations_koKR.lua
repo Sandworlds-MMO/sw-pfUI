@@ -50,6 +50,7 @@ pfUI_translation["koKR"] = {
   ["Auto Paging"] = nil,
   ["Auto Repair Items"] = "아이템 자동 수리",
   ["Auto Sell Grey Items"] = "회색아이템 자동 판매",
+  ["Auto Show/Hide Nameplates When Entering/Leaving Combat"] = "전투 진입/종료시 이름표 자동 표시/숨김",
   ["Average Per Hour"] = nil,
   ["Background Color"] = "백그라운드 색상",
   ["Bags & Bank"] = "가방&은행",

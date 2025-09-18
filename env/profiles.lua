@@ -276,6 +276,7 @@ local sandworlds = {
   },
   ["nameplates"] = {
     ["showfriendly"] = "1",
+    ["display_nameplates_combat_only"] = "1",
     ["healthtexture"] = "Interface\\AddOns\\pfUI\\img\\bar_gradient",
   },
   ["bars"] = {

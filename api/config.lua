@@ -739,6 +739,7 @@ function pfUI:LoadConfig()
 
   pfUI:UpdateConfig("nameplates", nil,           "showhostile",      "1")
   pfUI:UpdateConfig("nameplates", nil,           "showfriendly",     "0")
+  pfUI:UpdateConfig("nameplates", nil,           "display_nameplates_combat_only", "0")
   pfUI:UpdateConfig("nameplates", nil,           "use_unitfonts",    "0")
   pfUI:UpdateConfig("nameplates", nil,           "legacy",           "0")
   pfUI:UpdateConfig("nameplates", nil,           "overlap",          "0")

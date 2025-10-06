@@ -25,13 +25,17 @@ local sandworlds = {
     },
     ["xp"] = {
       ["xp_always"] = "1",
-      ["rep_width"] = "4",
+      ["xp_display"] = "XP",
       ["rep_display"] = "FLEX",
       ["xp_anchor"] = "pfActionBarMain",
+      ["rep_always"] = "1",
       ["texture"] = "Interface\\AddOns\\pfUI\\img\\bar_gradient",
+      ["xp_color"] = "0.9,0.9,0.9,1",
+      ["rest_color"] = "0.3,0.4,1,1",
       ["xp_mode"] = "HORIZONTAL",
       ["xp_position"] = "BOTTOM",
-      ["xp_display"] = "XP",
+      ["dont_overlap"] = "1",
+      ["rep_width"] = "4",
     },
   },
   ["buffbar"] = {
@@ -195,15 +199,15 @@ local sandworlds = {
   ["version"] = "5.5.4",
   ["position"] = {
     ["pfActionBarRight"] = {
-      ["xpos"] = -364,
+      ["xpos"] = -387,
       ["anchor"] = "BOTTOMRIGHT",
       ["ypos"] = 1,
       ["parent"] = "UIParent",
     },
     ["pfDurability"] = {
-      ["xpos"] = 393,
+      ["xpos"] = 346,
       ["anchor"] = "TOPLEFT",
-      ["ypos"] = -61,
+      ["ypos"] = -66,
       ["parent"] = "UIParent",
     },
     ["pfLootRollFrame1"] = {
@@ -220,10 +224,10 @@ local sandworlds = {
       ["anchor"] = "CENTER",
     },
     ["pfTooltipAnchor"] = {
-      ["xpos"] = -4,
+      ["xpos"] = -5,
       ["parent"] = "UIParent",
-      ["ypos"] = 189,
-      ["anchor"] = "BOTTOMRIGHT",
+      ["ypos"] = -230,
+      ["anchor"] = "TOPRIGHT",
     },
     ["pfActionBarLeft"] = {
       ["xpos"] = 364,
@@ -250,9 +254,9 @@ local sandworlds = {
       ["parent"] = "UIParent",
     },
     ["QuestTimerFrame"] = {
-      ["xpos"] = 0,
-      ["anchor"] = "TOPRIGHT",
-      ["ypos"] = -210,
+      ["xpos"] = -157,
+      ["anchor"] = "TOP",
+      ["ypos"] = -63,
       ["parent"] = "UIParent",
     },
     ["TicketStatusFrame"] = {

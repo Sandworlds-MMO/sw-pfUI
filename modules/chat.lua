@@ -102,10 +102,10 @@ pfUI:RegisterModule("chat", "vanilla:tbc", function ()
 
   pfUI.chat.URLPattern = {
     WWW = {
-      ["rx"]=" (www%d-)%.([_A-Za-z0-9-]+)%.(%S+)%s?",
+      ["rx"]=" (www%d-)%.([_A-Za-z0-9-]+)%.([^%s|]+)%s?",
       ["fm"]="%s.%s.%s"},
     PROTOCOL = {
-      ["rx"]=" (%a+)://(%S+)%s?",
+      ["rx"]=" (%a+)://([^%s|]+)%s?",
       ["fm"]="%s://%s"},
     EMAIL = {
       ["rx"]=" ([_A-Za-z0-9-%.:]+)@([_A-Za-z0-9-]+)(%.)([_A-Za-z0-9-]+%.?[_A-Za-z0-9-]*)%s?",
@@ -117,13 +117,13 @@ pfUI:RegisterModule("chat", "vanilla:tbc", function ()
       ["rx"]=" (%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%s?",
       ["fm"]="%s.%s.%s.%s"},
     SHORTURL = {
-      ["rx"]=" (%a+)%.(%a+)/(%S+)%s?",
+      ["rx"]=" (%a+)%.(%a+)/([^%s|]+)%s?",
       ["fm"]="%s.%s/%s"},
     URLIP = {
-      ["rx"]=" ([_A-Za-z0-9-]+)%.([_A-Za-z0-9-]+)%.(%S+)%:([_0-9-]+)%s?",
+      ["rx"]=" ([_A-Za-z0-9-]+)%.([_A-Za-z0-9-]+)%.([^%s|]+)%:([_0-9-]+)%s?",
       ["fm"]="%s.%s.%s:%s"},
     URL = {
-      ["rx"]=" ([_A-Za-z0-9-]+)%.([_A-Za-z0-9-]+)%.(%S+)%s?",
+      ["rx"]=" ([_A-Za-z0-9-]+)%.([_A-Za-z0-9-]+)%.([^%s|]+)%s?",
       ["fm"]="%s.%s.%s"},
   }
 
